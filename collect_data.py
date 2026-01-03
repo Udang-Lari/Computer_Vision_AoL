@@ -8,7 +8,7 @@ FILE_NAME = 'gesture_data.csv'
 
 CLASSES = {
     0: "IDLE (Diam/Random)",
-    1: "PAUSE (Kepal)",
+    1: "PAUSE (Kepal + kelingking)",
     2: "PLAY (5 Jari)",
     3: "NEXT (V / Angka 2)",
     4: "PREV (Angka 3)"
