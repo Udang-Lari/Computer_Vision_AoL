@@ -73,7 +73,7 @@ def generate_frames():
             if wrist_y < h * 0.15: 
                 cv2.putText(frame, "IGNORED (TOO HIGH)", (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 255), 2)
                 ret, buffer = cv2.imencode('.jpg', frame)
-                yield (b'frame\r\n'b'Content-Type: image/jpeg\r\n\r\n' + buffer.tobytes() + b'\r\n')
+                yield (b'--frame\r\n'b'Content-Type: image/jpeg\r\n\r\n' + buffer.tobytes() + b'\r\n')
                 continue
 
             fingers = []
